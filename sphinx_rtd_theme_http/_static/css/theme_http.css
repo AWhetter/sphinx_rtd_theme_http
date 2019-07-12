@@ -1,0 +1,68 @@
+.rst-content dl.post dt p,
+.rst-content dl.get dt p,
+.rst-content dl.put dt p,
+.rst-content dl.patch dt p,
+.rst-content dl.delete dt p {
+	float: right;
+	margin-bottom: 0 !important;
+	font-weight: normal;
+	color: gray;
+	line-height: normal;
+}
+
+.rst-content dl.post dt,
+.rst-content dl.get dt,
+.rst-content dl.put dt,
+.rst-content dl.patch dt,
+.rst-content dl.delete dt {
+	width: 100%;
+}
+
+.rst-content dl.post dt:hover,
+.rst-content dl.get dt:hover,
+.rst-content dl.put dt:hover,
+.rst-content dl.patch dt:hover,
+.rst-content dl.delete dt:hover {
+	box-shadow: 1px 2px 3px;
+}
+
+
+.rst-content dl.post dt {
+	background-color: #d4edda;
+	border-top-color: #aecfb6;
+	color: #155724;
+}
+
+.rst-content dl.put dt {
+	background-color: #f9e5c8;
+	border-top-color: #fbdab7;
+	color: #e88933;
+}
+
+.rst-content dl.patch dt {
+	background-color: #fff3cd;
+	border-top-color: #e7d7a4;
+	color: #856404;
+}
+
+.rst-content dl.delete dt {
+	background-color: #f8d7da;
+	border-top-color: #deb1b6;
+	color: #721c24;
+}
+
+.rst-content dl.post:not(.collapsed) dt::before,
+.rst-content dl.get:not(.collapsed) dt::before,
+.rst-content dl.put:not(.collapsed) dt::before,
+.rst-content dl.patch:not(.collapsed) dt::before,
+.rst-content dl.delete:not(.collapsed) dt::before {
+	content: '\25bc';
+	padding-right: 0.5em;
+	color: grey;
+}
+
+.rst-content dl.collapsed dt::before {
+	content: '\25ba';
+	padding-right: 0.5em;
+	color: grey;
+}
